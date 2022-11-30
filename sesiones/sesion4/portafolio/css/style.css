@@ -58,3 +58,10 @@ h1{
         display:none;
     }
 }
+
+/*Limitar el tamaño maximo de la imagen de tecnologias*/
+@media screen and (min-width: 700px){
+    .hero-inferior-imagen{
+        max-width: 600px;
+    }
+}
