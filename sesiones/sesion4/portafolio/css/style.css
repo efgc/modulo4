@@ -1,3 +1,16 @@
+/*Estilos generales*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive, monospace;
+}
+/*Fin Estilos generales*/
 
 /*Barra navegacion*/
 .navbar{
@@ -9,4 +22,39 @@
 .navbar-collapse{
     align-items: center;
     justify-content: space-between;
+}
+/*Fin Barra navegacion*/
+
+/*Seccion Hero*/
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-imagen-desarrollador{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    /*border-radius: 50%;  --> rounded-circle*/
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color:#615151;
+}
+/*Fin Seccion Hero*/
+
+
+/*Reglas responsive*/
+
+/*Ocultamos icono de la barra de navegacion al alcanzar 767 pixeles*/
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display:none;
+    }
 }
