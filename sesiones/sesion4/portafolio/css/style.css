@@ -16,10 +16,20 @@ h1 {
     color: white;
 }
 
+.seccion-clara {
+    color: black;
+    background-color: white;
+}
+
 .seccion-titulo {
     font-size: 2rem;
     padding: 15px 0;
     font-family: 'Rubik Dirt', cursive, monospace;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
 }
 
 .seccion-texto {
@@ -98,7 +108,7 @@ h1 {
 }
 
 /*Efecto al pasar cursor sobre la columna*/
-.experiencia .columna:hover{
+.experiencia .columna:hover {
     color: white;
     background-color: rgb(34, 32, 51);
 }
@@ -111,8 +121,8 @@ h1 {
     border-radius: 50%;
 }
 
-.experiencia-titulo{
-    font-size:25px;
+.experiencia-titulo {
+    font-size: 25px;
     font-weight: bold;
     margin: 10px 0;
 }
@@ -128,6 +138,53 @@ h1 {
 }
 
 /*Fin Experiencias*/
+
+
+/*Proyectos*/
+.proyectos-recientes {
+    padding: 40px;
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    opacity: 0.5;
+}
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+    /*
+    display: flex;
+    flex-direction: row; */
+}
+
+.overlay {
+    /*Hacemos transparente el elemento*/
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+
+/*Debe de tener position relativa para que el overlay se posicione sobre el*/
+.proyecto {
+    position: relative;
+}
+
+/*Fin Proyectos*/
 
 /*Reglas responsive*/
 
