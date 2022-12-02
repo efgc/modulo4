@@ -36,7 +36,7 @@ h1 {
     font-size: 1.3rem;
 }
 
-.btn-info{
+.btn-info {
     font-size: 1.2rem;
     margin: 20px;
 }
@@ -111,6 +111,9 @@ h1 {
     /*Transicion*/
     transition: all 0.5s ease-in;
 }
+
+/*Fin experiencias*/
+
 
 /*Efecto al pasar cursor sobre la columna*/
 .experiencia .columna:hover {
@@ -189,27 +192,44 @@ h1 {
 }
 
 /*Cambiamos la opacidad de la imagen cuando se pasa el cursor*/
-.proyecto:hover img{
-   opacity:0.2;
+.proyecto:hover img {
+    opacity: 0.2;
 }
 
-.proyecto:hover .overlay{
+.proyecto:hover .overlay {
     opacity: 1;
 }
 
 /*Estilo a los iconos del proyecto*/
-.overlay .iconos-contenedor{
+.overlay .iconos-contenedor {
     display: flex;
 }
 
-.overlay i{
+.overlay i {
     color: black;
     font-size: 45px;
     margin: 10px;
 }
 
-
 /*Fin Proyectos*/
+
+/* Ariculos */
+.articulos{
+    min-height: 500px;
+    padding: 30px;
+}
+
+.articulos .card{
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.articulos .card-header{
+    font-weight: bold;
+
+}
+/* Fin Ariculos */
 
 /*Reglas responsive*/
 
