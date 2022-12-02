@@ -36,6 +36,11 @@ h1 {
     font-size: 1.3rem;
 }
 
+.btn-info{
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
 /*Fin Estilos generales*/
 
 /*Barra navegacion*/
@@ -151,7 +156,6 @@ h1 {
     padding: 10px;
     border-radius: 20px;
     display: block;
-    opacity: 0.5;
 }
 
 .proyectos-contenedor {
@@ -164,7 +168,7 @@ h1 {
 
 .overlay {
     /*Hacemos transparente el elemento*/
-    opacity: 1;
+    opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -183,6 +187,27 @@ h1 {
 .proyecto {
     position: relative;
 }
+
+/*Cambiamos la opacidad de la imagen cuando se pasa el cursor*/
+.proyecto:hover img{
+   opacity:0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+/*Estilo a los iconos del proyecto*/
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 45px;
+    margin: 10px;
+}
+
 
 /*Fin Proyectos*/
 
