@@ -1,0 +1,25 @@
+
+/*fixed, permite que la posicion del elemento sea fija y se mueve en la pagina segun hacemos scroll*/
+
+/*Con fixed, el espacio que dejaria el elemento al moverse, lo ocupan los siguientes elementos en el flujo*/
+.abuelo{
+    position: fixed;
+}
+
+.padre {
+   
+}
+
+.hijo {
+   
+
+}
+
+.hijo:hover{
+  
+}
+
+.hijo2 {}
+
+
+.otroElemento {}

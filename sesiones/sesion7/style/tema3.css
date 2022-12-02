@@ -1,0 +1,30 @@
+/*Un elemento con position absolute tratara de ubicarse relativamente a un ancestro cuya position sea diferente a static*/
+
+/*Si no lo encuentra, se movera hacia body*/
+
+/*Un elemento con posicion absoluta, es removido del flujo normal y puede colocarse sobre otros elementos*/
+
+.abuelo{
+    position:relative;
+}
+
+.padre {
+   
+}
+
+.hijo {
+    position: absolute;
+    left: 0px;
+    bottom: 80px;
+    opacity: 1;
+
+}
+
+.hijo:hover{
+    opacity:0.5
+}
+
+.hijo2 {}
+
+
+.otroElemento {}

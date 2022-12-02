@@ -1,0 +1,27 @@
+/*relative permitira mover los elementos relativamente a su posicion original*/
+.padre {
+    height: 200px;
+    width: 500px;
+}
+
+.hijo{
+    position: relative;
+    top: 40px;
+    left: 80px;
+    display: inline;
+}
+.hijo2{
+    top: 10px;
+    left: 80px;
+    display: inline;
+
+}
+
+
+.otroElemento {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    /*bottom: 50px;
+    right: 20px;*/
+}

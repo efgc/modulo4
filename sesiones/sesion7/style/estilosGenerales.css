@@ -1,0 +1,20 @@
+
+.morado{
+    background-color: purple;
+}
+
+.verde{
+    background-color: green;
+}
+
+.azul{
+    background-color: blue;
+}
+
+div{
+    width: 400px;
+    color: white;
+    font-size: 25px;
+    height: auto;
+    border-radius: 20px;
+}

@@ -1,0 +1,10 @@
+
+/*Se respetara el flujo de los elementos segun el HTML*/
+
+/*Si no asignamos un valor a la propiedad position, esta sera static por defecto*/
+.padre{
+    position: static;
+}
+
+.otroElemento{
+}

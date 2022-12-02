@@ -1,0 +1,19 @@
+/*Sticky le permite al elemento colocarse en base a la posicion del scroll del usurio*/
+
+/*Sticky cambia entre relative y fixed dependiendo de la posicion del scroll. Es relativo hasta que cierta poscion se cumpla en el viewport luego se "pega" esa posicion y se comporta como fixed (nos sigue)*/
+.abuelo {
+    position: sticky;
+    top: 50px;
+    left: 0px;
+}
+
+.padre {}
+
+.hijo {}
+
+.hijo:hover {}
+
+.hijo2 {}
+
+
+.otroElemento {}
