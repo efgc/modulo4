@@ -288,6 +288,64 @@ h1 {
 
 /* Fin Ariculos */
 
+/* Contacto */
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: rgb(66, 34, 109);
+    border-radius: 10px;
+    /*primer valor, el cambio en la horizontal (positivo derecha, negativo izquierda*/
+    /*segundo valor, el cambio en la vertical (positivo abajo, negativo arriba*/
+    /* Opcional Tercer valor, la cantidad de difuminado, a mayor valor, mas difuminado*/
+    /*Opcional Cuarto valor, la cantidad de propagacion que tendra la sombra, puede ser positivo o negativo*/
+    /*Opcional, Quinto valor, el color de la sombra, si no se coloca, por defecto tomara el color de letra del div*/
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size:  1.2rem;
+    margin-bottom: 20px;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1em 1.5em;
+    border-radius: 50px;
+    transition: all 1s ease-in-out;
+}
+
+.contacto button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 1s ease-in-out;
+}
+
+/*Efecto de cursor sobre boton contacto*/
+.contacto button:hover{
+    background-color: white;
+    color: black;
+}
+
+.contacto button:hover i{
+    color: black;
+}
+/* Fin Contacto */
 /*Reglas responsive*/
 
 /*Ocultamos icono de la barra de navegacion al alcanzar 767 pixeles*/
