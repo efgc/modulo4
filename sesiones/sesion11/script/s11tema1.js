@@ -25,7 +25,16 @@ for (let estudiante of lista_estudiantes) {
     console.log("<tr>")
     //for agrega celdas
     for (let propiedad in estudiante) {
-        console.log(`   <td>${estudiante[propiedad]}</td>`)
+        //sin for para el arreglo
+        if (propiedad == 'notas') {
+            console.log(`   <td>${estudiante[propiedad][0]}</td>`);
+            console.log(`   <td>${estudiante[propiedad][1]}</td>`);
+            console.log(`   <td>${estudiante[propiedad][2]}</td>`);
+        }
+        else {
+            console.log(`   <td>${estudiante[propiedad]}</td>`);
+        }
+
     }
     console.log("</tr>")
 }
@@ -35,9 +44,18 @@ for (let estudiante of lista_estudiantes) {
     //
     contenido_tabulado += "\n<tr>"
     for (let propiedad in estudiante) {
-        contenido_tabulado+= "\n   <td>"+estudiante[propiedad]+"</td>"
+        if (propiedad == "notas") {
+            //nota toma los valores 0 1 2, que son los indices del arreglo
+            for (let nota in estudiante[propiedad]) {
+                //estudiante[propiedad] -> estudiante.notas
+                //estudiante[propiedad][nota] -> estudiante.notas[0]
+                contenido_tabulado += "\n   <td>" + estudiante[propiedad][nota] + "</td>"
+            }
+        } else {
+            contenido_tabulado += "\n   <td>" + estudiante[propiedad] + "</td>"
+        }
     }
-    contenido_tabulado +="\n</tr>";
+    contenido_tabulado += "\n</tr>";
 }
 console.log("**********************");
 console.log(contenido_tabulado);
