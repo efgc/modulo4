@@ -21,15 +21,24 @@ app.get('/acerca-de', (req, res) => {
 });
 
 //ruta para mostrar la calculadora
-app.get('/calculadora', (req, res)=>{
+app.get('/calculadora', (req, res) => {
     res.sendFile(__dirname + "/calculadora.html");
 });
 
-app.get('/mostrarResultado', (req, res)=>{
+//req.query permite acceder a los valores recibidos por medio de get
+//los nombres de los parametros se definen en el atributo name del html
+app.get('/mostrarResultado', (req, res) => {
     let numero1 = Number(req.query.numero1);
     let numero2 = Number(req.query.numero2);
     res.send(`El resultado es: ${numero1 + numero2}`);
 });
 
+// atender peticion get en /mostrarResta
+app.get('/mostrarResta', (req, res) => {
+    let resultado = Number(req.query.numero1) - Number(req.query.numero2);
+    res.send(`El resultado de la <b>resta</b> es: ${resultado}`);
+});
 
+//multiplicacion
+//division
 app.listen(5000, console.log("Escuchando en el puerto 5000"));
